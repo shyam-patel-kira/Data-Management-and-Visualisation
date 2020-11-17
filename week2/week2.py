@@ -7,7 +7,7 @@ cols = ['age_afm', 'consumer', 'h_often_12m', 'h_often_5beer_12m', 'edu']
 def read_data():
     # this function reads the wanted subset of the data and renames the coloumns
     col_wanted = ['S1Q4A', 'CONSUMER', 'S2AQ5B', 'S2AQ5G', 'S1Q6A']
-    data = pd.read_csv('/home/data-sci/Desktop/analysis/course/nesarc_pds.csv',
+    data = pd.read_csv('/home/kira/Desktop/analysis/course/nesarc_pds.csv',
                        low_memory=False, usecols=col_wanted, )
     data.rename(columns={'S1Q4A': 'age_afm',
                          'CONSUMER': 'consumer',
